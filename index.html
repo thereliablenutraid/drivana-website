@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Drivana</title>
+<title>Drivana</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png"><link rel="icon" href="favicon.ico" sizes="any"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="theme-color" content="#120D0A">
 <meta name="description" content="Doctor-led IV therapy, aesthetic care and medical consultation, delivered at home across Bangalore.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap">
 <style>
@@ -133,6 +133,15 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;op
 /* header fit: the booking button never gets cut off */
 .nav>.btn,.nav>a.btn,.nav .cartb,.nav .tg{flex:none}
 @media(max-width:1480px){.nav{gap:16px}.nav nav{gap:18px}}
+
+/* website content from the CRM */
+#sc-sec[hidden],#sc-ba[hidden],#sc-tst[hidden],#sc-vid[hidden]{display:none!important}
+#sc-tst{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}#sc-tst .card{gap:10px}
+.sc-vids{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))!important;margin-top:22px}
+button.vid{font:inherit;text-align:left;cursor:pointer;width:100%}
+.sc-stars{color:var(--gold);letter-spacing:.12em;font-size:15px}.sc-stars span{opacity:.25}
+.sc-face{width:56px;height:56px;border-radius:50%;object-fit:cover;border:1px solid var(--gold2)}
+.sc-modal{position:fixed;inset:0;z-index:100;background:rgba(10,7,5,.86);display:grid;place-items:center;padding:16px}.sc-box{position:relative;width:min(960px,100%);aspect-ratio:16/9}.sc-box iframe{width:100%;height:100%;border:0;border-radius:10px;background:#000}.sc-x{position:absolute;top:-46px;right:0;background:none;border:1px solid #D6B57C;color:#D6B57C;width:38px;height:38px;border-radius:50%;font-size:22px;cursor:pointer}
 </style>
 <header class="hd"><div class="w nav"><a class="wm" href="#home" aria-label="Drivana home">DRIVANA</a>
 <nav aria-label="Main" id="nv"><a href="#home">Home</a><a href="#services">Services</a><a href="#products">Products</a><a href="#about">About</a><a href="#consultants">Consultants</a><a href="#journal">Journal</a><a href="#contact">Contact</a></nav>
@@ -165,13 +174,10 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;op
 <div class="card"><h3>At-home infusion</h3><p>Certified clinical staff come to you with sterile, single-use kits, unsealed in front of you.</p></div></div></div></section>
 <section class="dk"><div class="w"><div class="head"><div class="eyebrow">Our standards</div><h2>Quiet luxury, clinical precision</h2></div><div class="g4">
 <div class="card"><h3>Medical supervision</h3><p>Doctor-led clinical protocols.</p></div><div class="card"><h3>Bespoke infusions</h3><p>Ingredients and frequency tailored to you.</p></div><div class="card"><h3>Sterile standards</h3><p>Single-use kits only, never reused.</p></div><div class="card"><h3>Concierge care</h3><p>Same-day availability and quick replies.</p></div></div></div></section>
-<section class="band"><div class="w"><div class="head"><div class="eyebrow">Real results</div><h2>Before and after</h2><p>Real visual progress across skin, hair and anti-ageing treatments. Results vary from person to person.</p></div>
+<section class="band" id="sc-sec" hidden><div class="w"><div class="head"><div class="eyebrow">Real results</div><h2>Before and after</h2><p>Real visual progress across skin, hair and anti-ageing treatments. Results vary from person to person.</p></div>
 <div class="stats"><div class="rv"><b data-n="2000" data-p="+">0</b><span>Drips delivered</span></div><div class="rv" style="--d:1"><b data-n="4.9" data-d="1">0</b><span>Client experience</span></div><div class="rv" style="--d:2"><b data-n="100" data-p="%">0</b><span>Sterile protocols</span></div></div>
-<div class="ba rv"><div class="batabs" id="batabs"></div><div class="bas" id="bas"><div class="p pb"><span>Before</span></div><div class="p pa"><span>After</span></div><span class="lb l1">Before</span><span class="lb l2">After</span><div class="hd2"></div><input type="range" min="0" max="100" value="50" id="bar" aria-label="Drag to compare before and after"></div><p class="fine" id="bacap" style="margin:0"></p></div>
-<div class="tst"><div class="card rv"><div class="eyebrow" style="margin-bottom:6px">Verified review</div><div class="rev">“I was honestly a little nervous before starting because I’d tried so many things before.”</div><div class="meta">Priya, Bengaluru</div></div>
-<a class="vid rv" style="--d:1" href="https://instagram.com/letsdrip_with_drivana" target="_blank" rel="noopener"><i>▶</i><span>Video testimonial</span><b>Glow Drip before her wedding day</b></a>
-<a class="vid rv" style="--d:2" href="https://instagram.com/letsdrip_with_drivana" target="_blank" rel="noopener"><i>▶</i><span>Video testimonial</span><b>Hangover Drip recovery</b></a></div>
-<div class="tst" style="grid-template-columns:1fr 1fr;margin-top:22px"><a class="vid rv" href="https://instagram.com/letsdrip_with_drivana" target="_blank" rel="noopener"><i>▶</i><span>Video testimonial</span><b>Hydrafacial glow</b></a><a class="vid rv" style="--d:1" href="https://instagram.com/letsdrip_with_drivana" target="_blank" rel="noopener"><i>▶</i><span>Video testimonial</span><b>Chemical peel session results</b></a></div></div></section>
+<div class="ba" id="sc-ba" hidden><div class="batabs" id="batabs"></div><div class="bas" id="bas"><div class="p pb"><span>Before</span></div><div class="p pa"><span>After</span></div><span class="lb l1">Before</span><span class="lb l2">After</span><div class="hd2"></div><input type="range" min="0" max="100" value="50" id="bar" aria-label="Drag to compare before and after"></div><p class="fine" id="bacap" style="margin:0"></p></div>
+<div class="tst" id="sc-tst" hidden></div><div class="tst sc-vids" id="sc-vid" hidden></div></div></div></section>
 <section class="dk"><div class="w" style="text-align:center"><h2 style="font-size:clamp(44px,7vw,84px);font-style:italic">Let’s drip together.</h2><p class="mu" style="margin:12px 0 24px;font-weight:300">Same-day availability across Bangalore. Your first consultation may be free.</p><a class="btn" href="#consultation">Book a consultation</a></div></section>
 </div>
 
@@ -380,11 +386,29 @@ $('cartbody').addEventListener('click',function(e){var b=e.target.closest('butto
  if(b.dataset.q!==undefined){var c=CART[+b.dataset.q];c.qty=Math.max(1,Math.min(20,c.qty+(+b.dataset.d)));saveCart();cartView()}
  if(b.dataset.r!==undefined){CART.splice(+b.dataset.r,1);saveCart();cartView()}});
 /* before and after */
-var BA=[['Skin clarity and glow','Glow Drip and Hydrafacial, after 3 sessions'],['Hair','Hair Recovery Drip'],['Anti-ageing','Exosomes and NAD+ care']],bi=0;
-function baShow(i){bi=i;$('batabs').innerHTML=BA.map(function(b,k){return '<button type="button" aria-pressed="'+(k===i)+'" data-b="'+k+'">'+b[0]+'</button>'}).join('');$('bacap').textContent=BA[i][1]+'. Drag the divider to compare.'}
+var BA=[],bi=0;
+/* website content managed in the Drivana CRM (Website page): published before/after, videos and testimonials */
+var SITE='https://crm.dripwithdrivana.com';
+function esc(x){return String(x==null?'':x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function baShow(i){if(!BA.length)return;bi=i;var b=BA[i];
+ $('batabs').innerHTML=BA.length>1?BA.map(function(x,k){return '<button type="button" aria-pressed="'+(k===i)+'" data-b="'+k+'">'+esc(x.title||x.treatment||('Result '+(k+1)))+'</button>'}).join(''):'';
+ var pb=document.querySelector('#bas .pb'),pa=document.querySelector('#bas .pa');pb.style.backgroundImage='url("'+SITE+b.images.before+'")';pa.style.backgroundImage='url("'+SITE+b.images.after+'")';pb.innerHTML='';pa.innerHTML='';
+ $('bacap').textContent=[b.title&&BA.length===1?b.title:'',b.treatment,b.body].filter(Boolean).join('. ')+'. Drag the divider to compare. Results vary from person to person.'}
+function stars(n){return n?'<div class="sc-stars" role="img" aria-label="'+n+' out of 5 stars">'+'★★★★★'.slice(0,n)+'<span>'+'★★★★★'.slice(n)+'</span></div>':''}
+function ytThumb(u){var m=/youtube-nocookie\.com\/embed\/([\w-]+)/.exec(u||'');return m?'https://i.ytimg.com/vi/'+m[1]+'/hqdefault.jpg':''}
+function scLoad(){fetch(SITE+'/api/v1/public/site/drivana/items').then(function(r){return r.json()}).then(function(j){var L=j.items||[];
+ BA=L.filter(function(x){return x.kind==='result'});var T=L.filter(function(x){return x.kind==='testimonial'}),V=L.filter(function(x){return x.kind==='video'});
+ if(!L.length)return;$('sc-sec').hidden=false;
+ if(BA.length){$('sc-ba').hidden=false;baShow(0)}
+ if(T.length){$('sc-tst').hidden=false;$('sc-tst').innerHTML=T.map(function(t,k){return '<div class="card">'+(t.images.photo?'<img class="sc-face" src="'+SITE+t.images.photo+'" alt="" loading="lazy">':'')+stars(t.rating)+'<div class="rev">“'+esc(t.body)+'”</div><div class="meta">'+esc(t.person)+(t.treatment?' · '+esc(t.treatment):'')+'</div></div>'}).join('')}
+ if(V.length){$('sc-vid').hidden=false;$('sc-vid').innerHTML=V.map(function(v){var th=ytThumb(v.embed);return '<button type="button" class="vid" data-v="'+esc(v.embed)+'"'+(th?' style="background:linear-gradient(180deg,rgba(18,13,10,.1),rgba(18,13,10,.88)),url('+th+') center/cover"':'')+'><i>▶</i><span>'+esc(v.treatment||'Video')+'</span><b>'+esc(v.title||'Watch')+'</b></button>'}).join('')}
+}).catch(function(){})}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-v]');if(!b)return;var m=document.createElement('div');m.className='sc-modal';m.innerHTML='<div class="sc-box"><button type="button" class="sc-x" aria-label="Close">×</button><iframe src="'+b.dataset.v+(b.dataset.v.indexOf('youtube')>0?'?autoplay=1&rel=0':'')+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen title="Video"></iframe></div>';document.body.appendChild(m);m.addEventListener('click',function(ev){if(ev.target===m||ev.target.closest('.sc-x'))m.remove()})});
+scLoad();
+
 $('batabs').addEventListener('click',function(e){var b=e.target.closest('button');if(b)baShow(+b.dataset.b)});
 $('bar').addEventListener('input',function(){$('bas').style.setProperty('--x',this.value+'%')});
-baShow(0);saveCart();route();
+saveCart();route();
 })();
 </script>
 </body></html>
