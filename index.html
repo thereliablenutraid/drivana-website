@@ -168,6 +168,18 @@ button.vid{font:inherit;text-align:left;cursor:pointer;width:100%}
 @media(max-width:900px){.hero .mk{order:-1;max-height:none}.hero .mark{width:min(170px,46%)}.hero .ring{display:none}.hero{padding-block:28px 56px;gap:8px}}
 .hd .btn.sm .sh{display:none}
 @media(max-width:560px){.hd .btn.sm .sh{display:inline}.hd .btn.sm .lg{display:none}.tg{display:none}.wm{font-size:20px!important;letter-spacing:.34em}.hd .btn.sm{padding:11px 16px}.hact{gap:8px}}
+
+/* v115 team from the CRM, follow us */
+#fol-sec[hidden]{display:none!important}
+.member{align-content:start}
+.mphoto{width:104px;height:104px;border-radius:50%;object-fit:cover;border:1px solid var(--gold2);margin-bottom:6px}
+.mspec{color:var(--gold);margin:0;font-size:14px}
+.mlinks{display:flex;gap:16px;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase}.mlinks a{color:var(--gold);text-decoration:none}
+.fol-btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:10px}
+.fol-posts{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-top:30px;align-items:flex-start;text-align:left}.fol-posts>*{flex:0 1 320px}#fol-sec .head{max-width:none;margin-inline:auto}#fol-sec .head .eyebrow{justify-content:center}
+.fol-posts:empty{display:none}
+.fol-f{width:100%;height:560px;border:1px solid var(--ln);border-radius:10px;background:var(--card)}.fol-f.tt{height:600px}
+.fol-yt{aspect-ratio:9/12;width:100%}
 </style>
 <header class="hd"><div class="w nav"><a class="wm" href="#home" aria-label="Drivana home">DRIVANA</a>
 <nav aria-label="Main" id="nv"><a href="#services">Treatments</a><a href="#consultants">Doctors</a><a href="#products">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
@@ -204,6 +216,7 @@ button.vid{font:inherit;text-align:left;cursor:pointer;width:100%}
 <div class="stats"><div class="rv"><b data-n="2000" data-p="+">0</b><span>Drips delivered</span></div><div class="rv" style="--d:1"><b data-n="4.9" data-d="1">0</b><span>Client experience</span></div><div class="rv" style="--d:2"><b data-n="100" data-p="%">0</b><span>Sterile protocols</span></div></div>
 <div class="ba" id="sc-ba" hidden><div class="batabs" id="batabs"></div><div class="bas" id="bas"><div class="p pb"><span>Before</span></div><div class="p pa"><span>After</span></div><span class="lb l1">Before</span><span class="lb l2">After</span><div class="hd2"></div><input type="range" min="0" max="100" value="50" id="bar" aria-label="Drag to compare before and after"></div><p class="fine" id="bacap" style="margin:0"></p></div>
 <div class="tst" id="sc-tst" hidden></div><div class="tst sc-vids" id="sc-vid" hidden></div></div></section>
+<section class="band" id="fol-sec" hidden><div class="w" style="text-align:center"><div class="head" style="justify-items:center;text-align:center"><div class="eyebrow">Follow us</div><h2>Rituals, results and behind the scenes</h2></div><div class="fol-btns" id="fol-btns"></div><div class="fol-posts" id="fol-posts"></div></div></section>
 <section class="dk"><div class="w" style="text-align:center"><h2 style="font-size:clamp(44px,7vw,84px);font-style:italic">Let’s drip together.</h2><p class="mu" style="margin:12px 0 24px;font-weight:300">Same-day availability across Bangalore. Your first consultation may be free.</p><a class="btn" href="#consultation">Book a consultation</a></div></section>
 </div>
 
@@ -236,7 +249,7 @@ button.vid{font:inherit;text-align:left;cursor:pointer;width:100%}
 
 <!-- CONSULTANTS -->
 <div class="view" id="v-consultants"><div class="pgb dk"><div class="w pg"><div class="eyebrow">Our doctors</div><h1>The doctors behind Drivana</h1><p class="lead">Drivana is a doctor-led healthcare and wellness brand created to make quality medical care more accessible.</p></div></div>
-<section><div class="w"><div class="g2">
+<section><div class="w"><div class="g2" id="team-list">
 <div class="card"><div class="eyebrow">Founder and CEO</div><h3>Dr. Khaleel, MBBS</h3><p>Preventive healthcare, IV wellness and home-based medical care.</p><div class="meta">KMC registration 155284</div></div>
 <div class="card"><div class="eyebrow">Co-founder</div><h3>Dr. Heba Kulsum, MBBS</h3><p>Preventive care, clinical quality and patient safety. A dedicated medical professional focused on healthcare that is safe, personal and built on trust.</p><div class="meta">Karnataka Medical Council · KMC 200419</div></div></div></div></section></div>
 
@@ -316,7 +329,7 @@ button.vid{font:inherit;text-align:left;cursor:pointer;width:100%}
 </svg><p>Doctor-led IV therapy and aesthetic care, delivered at home across Bangalore.</p></div><div class="nb" style="margin-bottom:26px"><div><h4>Treatments</h4><p><a href="#services">Glow Drip</a><br><a href="#services">Hair Recovery</a><br><a href="#services">NAD+ Drip</a><br><a href="#services">Aesthetic rituals</a></p></div>
 <div><h4>Explore</h4><p><a href="#about">About us</a><br><a href="#consultants">Our doctors</a><br><a href="#products">Shop</a><br><a href="#contact">Contact</a></p></div>
 <div><h4>Concierge and legal</h4><p><a href="#consultation">Book a consultation</a><br><a href="https://crm.dripwithdrivana.com/drivana">Patient app</a><br><a href="#privacy">Privacy policy</a><br><a href="#terms">Terms of service</a></p></div>
-<div><h4>Follow</h4><p><a href="https://instagram.com/letsdrip_with_drivana">Instagram</a><br>Bangalore, Karnataka</p></div></div>
+<div><h4>Follow</h4><p><span id="fol-foot"><a href="https://instagram.com/letsdrip_with_drivana">Instagram</a><br></span>Bangalore, Karnataka</p></div></div>
 <div class="in"><span>© Drivana. Let’s drip together.</span><span>Doctor-led IV therapy and aesthetic care</span></div>
 <p class="fine">IV therapy and aesthetic treatments are given only after a doctor’s assessment and are not suitable for everyone. Results vary from person to person. This website does not give medical advice. In an emergency, call 112 or 108.</p></div></footer>
 <script>
@@ -423,7 +436,18 @@ function baShow(i){if(!BA.length)return;bi=i;var b=BA[i];
  $('bacap').textContent=[b.title&&BA.length===1?b.title:'',b.treatment,b.body].filter(Boolean).join('. ')+'. Drag the divider to compare. Results vary from person to person.'}
 function stars(n){return n?'<div class="sc-stars" role="img" aria-label="'+n+' out of 5 stars">'+'★★★★★'.slice(0,n)+'<span>'+'★★★★★'.slice(n)+'</span></div>':''}
 function ytThumb(u){var m=/youtube-nocookie\.com\/embed\/([\w-]+)/.exec(u||'');return m?'https://i.ytimg.com/vi/'+m[1]+'/hqdefault.jpg':''}
-function scLoad(){fetch(SITE+'/api/v1/public/site/drivana/items').then(function(r){return r.json()}).then(function(j){var L=j.items||[];
+var SOC=[['instagram','Instagram'],['facebook','Facebook'],['tiktok','TikTok'],['youtube','YouTube'],['linkedin','LinkedIn'],['x','X'],['whatsapp','WhatsApp']];
+function lk(u,t,c){return '<a class="'+(c||'')+'" href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(t)+'</a>'}
+var SECN={doctor:0,nurse:1,psychologist:2,physiotherapist:2,team:3};
+function teamFill(M){if(!M.length)return;M=M.slice().sort(function(a,b){return (SECN[a.section]||0)-(SECN[b.section]||0)});
+ $('team-list').innerHTML=M.map(function(m){var L=m.links||{};return '<div class="card member">'+(m.images.photo?'<img class="mphoto" src="'+SITE+m.images.photo+'" alt="Photo of '+esc(m.person)+'" loading="lazy">':'')+'<div class="eyebrow">'+esc(m.title)+'</div><h3>'+esc(m.person)+(m.credential&&/^MBBS|^MD|^BDS/.test(m.credential)?', '+esc(m.credential.split(' · ')[0]):'')+'</h3>'+
+ (m.treatment?'<p class="mspec">'+esc(m.treatment)+'</p>':'')+(m.body?'<p>'+esc(m.body)+'</p>':'')+(m.credential?'<div class="meta">'+esc(m.credential)+'</div>':'')+((L.instagram||L.linkedin)?'<div class="mlinks">'+(L.instagram?lk(L.instagram,'Instagram'):'')+(L.linkedin?lk(L.linkedin,'LinkedIn'):'')+'</div>':'')+'</div>'}).join('')}
+function social(S,P){var B=SOC.filter(function(x){return S[x[0]]});
+ if(B.length){$('fol-foot').innerHTML=B.map(function(x){return lk(S[x[0]],x[1])}).join('<br>')+'<br>';$('fol-btns').innerHTML=B.map(function(x){return lk(S[x[0]],x[1],'btn o sm')}).join('')}
+ if(P.length)$('fol-posts').innerHTML=P.map(function(p){return p.embed.indexOf('youtube')>0?'<button type="button" class="vid fol-yt" data-v="'+esc(p.embed)+'" style="background:linear-gradient(180deg,rgba(18,13,10,.1),rgba(18,13,10,.88)),url('+ytThumb(p.embed)+') center/cover"><i>▶</i><b>'+esc(p.title||'Watch')+'</b></button>':'<iframe class="fol-f'+(p.embed.indexOf('tiktok')>0?' tt':'')+'" src="'+esc(p.embed)+'" loading="lazy" title="'+esc(p.title||'Social media post')+'" allowfullscreen></iframe>'}).join('');
+ if(B.length||P.length)$('fol-sec').hidden=false}
+function scLoad(){fetch(SITE+'/api/v1/public/site/drivana/items').then(function(r){return r.json()}).then(function(j){var A=j.items||[];teamFill(A.filter(function(x){return x.kind==='team'}));social(j.social||{},A.filter(function(x){return x.kind==='post'&&x.embed}));
+ var L=A.filter(function(x){return x.kind==='result'||x.kind==='testimonial'||x.kind==='video'});
  BA=L.filter(function(x){return x.kind==='result'});var T=L.filter(function(x){return x.kind==='testimonial'}),V=L.filter(function(x){return x.kind==='video'});
  if(!L.length)return;$('sc-sec').hidden=false;
  if(BA.length){$('sc-ba').hidden=false;baShow(0)}
