@@ -46,7 +46,7 @@ section{padding-block:clamp(64px,9vw,120px)}
 .svc .go{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold3);white-space:nowrap}
 .g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
 .card{background:var(--card);border:1px solid var(--ln);border-top:2px solid var(--gold);border-radius:0;padding:32px 28px;display:grid;gap:12px;align-content:start;min-width:0;transition:transform .25s,border-color .25s}.card:hover{transform:translateY(-3px);border-color:var(--gold)}
-.card h3{font-size:30px;font-weight:600;line-height:1.1}.card p{margin:0;color:var(--mu)}
+#sec-drips,#sec-aesthetic{scroll-margin-top:84px}.card h3{font-size:30px;font-weight:600;line-height:1.1}.card p{margin:0;color:var(--mu)}
 .drips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 .drip .t{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
 .chip{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold3);border:1px solid var(--gold2);padding:3px 11px;white-space:nowrap;display:inline-block}
@@ -202,8 +202,8 @@ button.vid{font:inherit;text-align:left;cursor:pointer;width:100%}
 </svg></div></div></div>
 <div class="strip"><div class="w"><span>Doctor consultation included</span><span>Sterile single-use kits</span><span>Kits opened before you</span><span>Same-day across Bangalore</span></div></div>
 <section><div class="w"><div class="head"><div class="eyebrow">What we do</div><h2>Three ways we look after you</h2><p>Every treatment starts with a doctor, so what you receive is chosen for you and not for everyone.</p></div>
-<div class="rows"><a class="svc" href="#services"><span class="n">I</span><div><h3>IV therapy</h3><p>Custom drips for skin, hair, energy and recovery, with ingredients decided after a health review.</p></div><span class="go">See the drips →</span></a>
-<a class="svc" href="#services"><span class="n">II</span><div><h3>Aesthetic care</h3><p>Hydrafacial, laser for acne, chemical peel and PRP, given with the same medical care.</p></div><span class="go">See the rituals →</span></a>
+<div class="rows"><a class="svc" href="#drips"><span class="n">I</span><div><h3>IV therapy</h3><p>Custom drips for skin, hair, energy and recovery, with ingredients decided after a health review.</p></div><span class="go">See the drips →</span></a>
+<a class="svc" href="#aesthetic"><span class="n">II</span><div><h3>Aesthetic care</h3><p>Hydrafacial, laser for acne, chemical peel, PRP, GFC, mesotherapy and microneedling, given with the same medical care.</p></div><span class="go">See the rituals →</span></a>
 <a class="svc" href="#consultants"><span class="n">III</span><div><h3>Medical consultation</h3><p>A doctor reviews your history and goals before any treatment. Included with every appointment.</p></div><span class="go">Meet the doctors →</span></a></div></div></section>
 <section class="band"><div class="w"><div class="head"><div class="eyebrow">Signature drips</div><h2>Where most people start</h2></div><div class="drips" id="feat"></div><div class="more"><a class="btn o" href="#services">All nine drips</a></div></div></section>
 <section><div class="w"><div class="head"><div class="eyebrow">How it works</div><h2>Three simple steps</h2></div><div class="g3 steps">
@@ -222,12 +222,12 @@ button.vid{font:inherit;text-align:left;cursor:pointer;width:100%}
 
 <!-- SERVICES -->
 <div class="view" id="v-services"><div class="pgb dk"><div class="w pg"><div class="eyebrow">Treatments</div><h1>IV therapy, aesthetic care and medical consultation</h1><p class="lead">A certified clinical nurse administers every IV at your home or office, after your health history has been reviewed by the clinical team.</p></div></div>
-<section><div class="w"><div class="head"><div class="eyebrow">IV infusions</div><h2>Our signature drips</h2></div><div class="drips" id="alld"></div>
+<section id="sec-drips"><div class="w"><div class="head"><div class="eyebrow">IV infusions</div><h2>Our signature drips</h2></div><div class="drips" id="alld"></div>
 <p class="fine">Your doctor confirms the exact formula for you after a health check, and may adjust or decline a drip. Durations are approximate.</p></div></section>
 <section class="band"><div class="w"><div class="head"><div class="eyebrow">Not sure where to start?</div><h2>Tell us what you are feeling</h2><p>A simple guide to what people often ask about. It is not a diagnosis; your doctor decides.</p></div>
 <div class="finder"><div class="opts" id="opts" role="group" aria-label="Concerns"></div><div class="card res" id="res" aria-live="polite"></div></div></div></section>
-<section><div class="w"><div class="head"><div class="eyebrow">Aesthetic care</div><h2>Aesthetic rituals</h2><p>Clinical and unhurried, at home. Ask us about suitability and downtime for each ritual when you book.</p></div>
-<div class="g4"><div class="card"><h3>Hydrafacial Ritual</h3><p>Cleansing, exfoliation and hydration for fresh, even-looking skin.</p></div><div class="card"><h3>Anti-Acne / Laser</h3><p>A medical approach to active acne and marks.</p></div><div class="card"><h3>Chemical peel</h3><p>A controlled peel to refine texture and tone.</p></div><div class="card"><h3>PRP</h3><p>Platelet-rich plasma, planned by your doctor.</p></div></div></div></section>
+<section id="sec-aesthetic"><div class="w"><div class="head"><div class="eyebrow">Aesthetic care</div><h2>Aesthetic rituals</h2><p>Clinical and unhurried, at home. Ask us about suitability and downtime for each ritual when you book.</p></div>
+<div class="g3"><div class="card"><h3>Hydrafacial Ritual</h3><p>Cleansing, exfoliation and hydration for fresh, even-looking skin.</p></div><div class="card"><h3>Anti-Acne / Laser</h3><p>A medical approach to active acne and marks.</p></div><div class="card"><h3>Chemical peel</h3><p>A controlled peel to refine texture and tone.</p></div><div class="card"><h3>PRP</h3><p>Platelet-rich plasma, planned by your doctor.</p></div><div class="card"><h3>GFC</h3><p>Growth factor concentrate prepared from your own blood, for hair fall, thinning hair and skin renewal.</p></div><div class="card"><h3>Mesotherapy / Microneedling</h3><p>Fine micro-injections or micro-channels with targeted actives, for texture, scars, pigmentation and hair.</p></div></div></div></section>
 <section class="band"><div class="w"><div class="head"><div class="eyebrow">Medical consultation</div><h2>A doctor first, always</h2></div><div class="g2"><div class="card"><p>A doctor consultation is included with every appointment. Your health history, medicines and allergies are reviewed before any infusion, and clinicians may refuse, change or stop a treatment if vital signs or conditions call for it.</p></div><div class="card"><p>Service area: <b>Pan Bangalore</b>, at-home concierge service only. Book through the website or WhatsApp.</p><a class="btn" style="justify-self:start" href="#consultation">Book a consultation</a></div></div></div></section></div>
 
 <!-- PRODUCTS -->
@@ -371,10 +371,11 @@ function reveal(){var v=document.querySelector('.view.on');if(!v)return;var L=v.
 function count(el){var n=el.querySelector('[data-n]');if(!n||n._d)return;n._d=1;var to=parseFloat(n.dataset.n),dp=+n.dataset.d||0,p=n.dataset.p||'',t0=null;
  function f(t){if(!t0)t0=t;var k=Math.min(1,(t-t0)/1600),e=1-Math.pow(1-k,3);n.textContent=(to*e).toFixed(dp)+(k===1?p:'');if(k<1)requestAnimationFrame(f)}
  if(matchMedia('(prefers-reduced-motion:reduce)').matches){n.textContent=to.toFixed(dp)+p}else requestAnimationFrame(f)}
-function route(){var h=(location.hash||'#home').slice(1);if(V.indexOf(h)<0)h='home';
+var SUB={drips:['services','sec-drips'],aesthetic:['services','sec-aesthetic']};   /* a link straight to a part of a page */
+function route(){var h=(location.hash||'#home').slice(1),go=null;if(SUB[h]){go=SUB[h][1];h=SUB[h][0]}if(V.indexOf(h)<0)h='home';
  V.forEach(function(v){$('v-'+v).classList.toggle('on',v===h)});
  [].forEach.call(document.querySelectorAll('#nv a'),function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+h)});
- window.scrollTo(0,0);if(h==='consultation')slots();if(h==='cart')cartView();reveal()}
+ window.scrollTo(0,0);if(go){var el=$(go);if(el)setTimeout(function(){el.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})},30)}if(h==='consultation')slots();if(h==='cart')cartView();reveal()}
 window.addEventListener('hashchange',route);
 window.addEventListener('scroll',function(){document.querySelector('.hd').classList.toggle('sc',scrollY>30)},{passive:true});
 /* theme */
